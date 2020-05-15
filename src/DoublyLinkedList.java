@@ -29,7 +29,6 @@ public class DoublyLinkedList <T>{
     }
 
     public void removeNode(Node<T> node){
-
     }
 
 }
