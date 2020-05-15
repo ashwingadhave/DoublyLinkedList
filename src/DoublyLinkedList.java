@@ -29,6 +29,15 @@ public class DoublyLinkedList <T>{
     }
 
     public void removeNode(Node<T> node){
+        if(head == null){
+            throw new RuntimeException();
+        }else{
+            Node<T> temp = head;
+            while(temp.next != node){
+                temp =temp.next;
+            }
+            temp.next = node.next;
+        }
     }
 
 }
